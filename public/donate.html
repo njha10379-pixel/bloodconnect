@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BloodConnect – Become a donor</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="donate">
+<div class="wrap">
+<header><a class="logo" href="index.html">Blood<b>Connect</b></a><nav><a href="index.html">Home</a><a href="find.html">Find donors</a><a href="donate.html" aria-current="page">Become a donor</a><a href="requests.html">Requests</a><a href="about.html">About</a></nav></header>
+<main>
+<section style="border-top:0">
+  <div class="two">
+    <div>
+      <h2>Become a donor</h2>
+      <p class="sub">Register once. You decide when you are available and who can contact you.</p>
+      <form class="form" id="reg">
+        <div class="f2">
+          <div><label for="rn">Full name</label><input id="rn" required maxlength="60" autocomplete="name"></div>
+          <div><label for="ra">Age</label><input id="ra" type="number" min="18" max="65" required></div>
+        </div>
+        <div class="f2">
+          <div><label for="rg">Blood group</label><select id="rg" required></select></div>
+          <div><label for="rc">City</label><select id="rc" required></select></div>
+        </div>
+        <div class="f2">
+          <div><label for="rar">Area or locality</label><input id="rar" required maxlength="40" placeholder="e.g. Thatipur"></div>
+          <div><label for="rp">Phone</label><input id="rp" type="tel" required pattern="[0-9]{10}" maxlength="10" placeholder="10 digits" autocomplete="tel"></div>
+        </div>
+        <label class="chk"><input type="checkbox" id="rcons" required> I agree to be contacted for blood requests. My phone number is shared only when I accept a request.</label>
+        <div><button class="btn" type="submit">Register as donor</button></div>
+      </form>
+      <div class="me" id="me" hidden>
+        <b id="mename"></b>
+        <div class="meta" id="mesub"></div>
+        <label class="chk" style="margin-top:.6rem"><input type="checkbox" id="meav"> I am available to donate</label>
+      </div>
+    </div>
+    <div>
+      <h2>How it works</h2>
+      <p class="sub">Four steps from request to donation.</p>
+      <ol class="steps">
+        <li><b>Search</b>Pick the blood group and city.</li>
+        <li><b>Request</b>Send the patient and hospital details to a donor.</li>
+        <li><b>Donor accepts</b>Contact details are shared only after the donor says yes.</li>
+        <li><b>Donate</b>Meet at the hospital. Donors can mark themselves unavailable for the next 3 months.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+</main>
+<footer>BloodConnect is a student project (ITM University Gwalior, Ad. WebTech CSE0309). Donor entries shown here are sample data. For a real emergency, contact the nearest hospital or blood bank.</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

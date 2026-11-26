@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BloodConnect – Your requests</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="requests">
+<div class="wrap">
+<header><a class="logo" href="index.html">Blood<b>Connect</b></a><nav><a href="index.html">Home</a><a href="find.html">Find donors</a><a href="donate.html">Become a donor</a><a href="requests.html" aria-current="page">Requests</a><a href="about.html">About</a></nav></header>
+<main>
+<section style="border-top:0">
+  <h2>Your requests</h2>
+  <p class="sub">Requests you have sent from this browser and their status.</p>
+  <div class="list" id="reqlist"></div>
+  <p><button class="btn ghost" id="clr" hidden>Clear all requests</button></p>
+</section>
+</main>
+<footer>BloodConnect is a student project (ITM University Gwalior, Ad. WebTech CSE0309). Donor entries shown here are sample data. For a real emergency, contact the nearest hospital or blood bank.</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BloodConnect – Blood Donor Finder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div class="wrap">
+<header><a class="logo" href="index.html">Blood<b>Connect</b></a><nav><a href="index.html" aria-current="page">Home</a><a href="find.html">Find donors</a><a href="donate.html">Become a donor</a><a href="requests.html">Requests</a><a href="about.html">About</a></nav></header>
+<main>
+<div class="hero">
+  <div>
+    <h1>Need blood? Find a donor in your city.</h1>
+    <p>Pick the blood group, choose the city, and send a request to donors who are available now. Donors share only their first name and area until they accept.</p>
+    <div class="row"><a class="btn" href="find.html" style="text-decoration:none;flex:none">Find a donor</a><a class="btn ghost" href="donate.html" style="text-decoration:none;flex:none">Become a donor</a></div>
+  </div>
+  <div class="pick"><h2>Tap your blood group to start</h2><div class="groups" id="hgroups"></div></div>
+</div>
+</main>
+<footer>BloodConnect is a student project (ITM University Gwalior, Ad. WebTech CSE0309). Donor entries shown here are sample data. For a real emergency, contact the nearest hospital or blood bank.</footer>
+</div>
+<div id="toast" role="status"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
